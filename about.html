@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dillon Fayas's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="fixed w-full top-0 z-50 bg-slate-900/95 backdrop-blur-sm border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <div class="text-2xl font-bold">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-400">YN</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link text-slate-300 hover:text-purple-400">Home</a>
+                <a href="about.html" class="nav-link active text-purple-400">About Me</a>
+                <a href="projects.html" class="nav-link text-slate-300 hover:text-purple-400">Projects</a>
+                <a href="reflections.html" class="nav-link text-slate-300 hover:text-purple-400">Reflections</a>
+                <a href="resume.html" class="nav-link text-slate-300 hover:text-purple-400">Resume</a>
+                <a href="contact.html" class="nav-link text-slate-300 hover:text-purple-400">Contact</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-slate-300">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-800">
+        <div class="px-4 pt-2 pb-3 space-y-1">
+            <a href="index.html" class="block px-3 py-2 text-slate-300 hover:bg-slate-800 rounded-lg">Home</a>
+            <a href="about.html" class="block px-3 py-2 text-purple-400 bg-slate-800 rounded-lg">About Me</a>
+            <a href="projects.html" class="block px-3 py-2 text-slate-300 hover:bg-slate-800 rounded-lg">Projects</a>
+            <a href="reflections.html" class="block px-3 py-2 text-slate-300 hover:bg-slate-800 rounded-lg">Reflections</a>
+            <a href="resume.html" class="block px-3 py-2 text-slate-300 hover:bg-slate-800 rounded-lg">Resume</a>
+            <a href="contact.html" class="block px-3 py-2 text-slate-300 hover:bg-slate-800 rounded-lg">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<!-- About Me Section -->
+<section class="page-section px-6 py-20">
+    <div class="max-w-5xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center fade-in">About Me</h2>
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="md:col-span-1 flex justify-center items-start fade-in">
+                <div class="circle-image bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center" style="width: 250px; height: 250px;">
+                    <svg class="w-32 h-32 text-white opacity-50" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="md:col-span-2 fade-in">
+                <div class="prose prose-invert prose-lg max-w-none">
+                    <p class="text-slate-300 leading-relaxed mb-6">
+                        I'm currently a third-year B.S. Software Engineering student with a deep passion for technology and problem-solving.
+                        My journey in software development began in high school when I built my first website, and I've been hooked ever since.
+                    </p>
+                    <p class="text-slate-300 leading-relaxed mb-6">
+                        Throughout my academic career, I've developed a strong foundation in computer science fundamentals, data structures,
+                        algorithms, and software design patterns. I'm particularly interested in web development, machine learning, and
+                        building scalable systems that make a real-world impact.
+                    </p>
+                    <p class="text-slate-300 leading-relaxed mb-6">
+                        I believe in continuous learning and staying current with emerging technologies. Whether it's exploring a new
+                        framework, contributing to open-source projects, or collaborating with teammates on challenging problems,
+                        I'm always eager to expand my skills and take on new challenges.
+                    </p>
+                    <p class="text-slate-300 leading-relaxed mb-6">
+                        Beyond coding, I enjoy mentoring fellow students, participating in hackathons, and giving back to the developer
+                        community. I'm actively seeking internship opportunities where I can apply my knowledge, learn from experienced
+                        professionals, and contribute to innovative projects.
+                    </p>
+                    <p class="text-slate-300 leading-relaxed">
+                        When I'm not at my computer, you can find me reading tech blogs, playing basketball, or experimenting with new
+                        coffee brewing techniques. I'm excited about what the future holds and look forward to making meaningful
+                        contributions to the tech industry.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-slate-900 border-t border-slate-800 py-8 px-6">
+    <div class="max-w-7xl mx-auto text-center">
+        <p class="text-slate-400">&copy; 2025 Your Name. Built with passion and lots of coffee.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

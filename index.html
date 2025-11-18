@@ -2,10 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Dillon Fayas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dillon Fayas's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Dillon Fayas</h1>
-    <p>This is Dillon Fayas's portfolio page</p>
+<!-- Navigation -->
+<nav class="fixed w-full top-0 z-50 bg-slate-900/95 backdrop-blur-sm border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <div class="text-2xl font-bold">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-400">YN</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link active text-purple-400">Home</a>
+                <a href="about.html" class="nav-link text-slate-300 hover:text-purple-400">About Me</a>
+                <a href="projects.html" class="nav-link text-slate-300 hover:text-purple-400">Projects</a>
+                <a href="reflections.html" class="nav-link text-slate-300 hover:text-purple-400">Reflections</a>
+                <a href="resume.html" class="nav-link text-slate-300 hover:text-purple-400">Resume</a>
+                <a href="contact.html" class="nav-link text-slate-300 hover:text-purple-400">Contact</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-slate-300">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-800">
+        <div class="px-4 pt-2 pb-3 space-y-1">
+            <a href="index.html" class="block px-3 py-2 text-purple-400 bg-slate-800 rounded-lg">Home</a>
+            <a href="about.html" class="block px-3 py-2 text-slate-300 hover:bg-slate-800 rounded-lg">About Me</a>
+            <a href="projects.html" class="block px-3 py-2 text-slate-300 hover:bg-slate-800 rounded-lg">Projects</a>
+            <a href="reflections.html" class="block px-3 py-2 text-slate-300 hover:bg-slate-800 rounded-lg">Reflections</a>
+            <a href="resume.html" class="block px-3 py-2 text-slate-300 hover:bg-slate-800 rounded-lg">Resume</a>
+            <a href="contact.html" class="block px-3 py-2 text-slate-300 hover:bg-slate-800 rounded-lg">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Home Section -->
+<section class="page-section flex items-center px-6">
+    <div class="max-w-7xl mx-auto w-full">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="fade-in order-2 md:order-1">
+                <h1 class="text-5xl md:text-6xl font-bold mb-4">
+                    Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-400">Your Name</span>
+                </h1>
+                <p class="text-xl text-slate-400 mb-2">B.S. Software Engineering Student</p>
+                <p class="text-lg text-slate-300 mb-6 leading-relaxed">
+                    I'm a third-year Software Engineering student passionate about building innovative solutions.
+                    I specialize in full-stack development and love tackling complex problems with clean, efficient code.
+                    Currently seeking internship opportunities where I can contribute to meaningful projects.
+                    When I'm not coding, you'll find me exploring new technologies and contributing to open-source.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="projects.html" class="btn-primary px-8 py-3 rounded-full font-semibold text-white">View My Work</a>
+                    <a href="contact.html" class="border-2 border-purple-500 text-purple-400 px-8 py-3 rounded-full font-semibold hover:bg-purple-500/10 transition">Get In Touch</a>
+                </div>
+            </div>
+            <div class="fade-in order-1 md:order-2 flex justify-center">
+                <div class="circle-image bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center">
+                    <svg class="w-40 h-40 text-white opacity-50" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Counter -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 fade-in">
+            <div class="text-center">
+                <div class="counter" data-target="3">0</div>
+                <p class="text-slate-400 mt-2">Years of Study</p>
+            </div>
+            <div class="text-center">
+                <div class="counter" data-target="15">0</div>
+                <p class="text-slate-400 mt-2">Projects Completed</p>
+            </div>
+            <div class="text-center">
+                <div class="counter" data-target="8">0</div>
+                <p class="text-slate-400 mt-2">Technologies</p>
+            </div>
+            <div class="text-center">
+                <div class="counter" data-target="500">0</div>
+                <p class="text-slate-400 mt-2">GitHub Commits</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-slate-900 border-t border-slate-800 py-8 px-6">
+    <div class="max-w-7xl mx-auto text-center">
+        <p class="text-slate-400">&copy; 2025 Your Name. Built with passion and lots of coffee.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
