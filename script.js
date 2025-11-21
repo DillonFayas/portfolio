@@ -108,3 +108,25 @@ setInterval(() => {
         }
     });
 }, 5000);
+
+// Copy to clipboard function
+function copyToClipboard(text, button) {
+    navigator.clipboard.writeText(text).then(() => {
+        // Change icon to checkmark
+        const originalHTML = button.innerHTML;
+        button.innerHTML = `
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+        `;
+        button.classList.add('text-green-400');
+
+        // Reset after 2 seconds
+        setTimeout(() => {
+            button.innerHTML = originalHTML;
+            button.classList.remove('text-green-400');
+        }, 2000);
+    }).catch(err => {
+        console.error('Failed to copy:', err);
+    });
+}
