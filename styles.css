@@ -168,3 +168,10 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+
+.project-image {
+    height: 340px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
