@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Pricing Database - Dillon Fayas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="../../../public/DF_Favicon.png">
+    <link rel="stylesheet" href="../../../styles.css">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="fixed w-full top-0 z-50 bg-slate-900/95 backdrop-blur-sm border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <div class="text-2xl font-bold">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-400">DF</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="../../../" class="nav-link text-slate-300 hover:text-purple-400">Home</a>
+                <a href="../" class="nav-link text-slate-300 hover:text-purple-400">Projects</a>
+                <a href="../../Reflections/" class="nav-link text-slate-300 hover:text-purple-400">Reflections</a>
+                <a href="../../Resume/" class="nav-link text-slate-300 hover:text-purple-400">Resume</a>
+                <a href="../../Contact/" class="nav-link text-slate-300 hover:text-purple-400">Contact</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-slate-300">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-800">
+        <div class="px-4 pt-2 pb-3 space-y-1">
+            <a href="../../../" class="block px-3 py-2 text-slate-300 hover:bg-slate-800 rounded-lg">Home</a>
+            <a href="../" class="block px-3 py-2 text-slate-300 hover:bg-slate-800 rounded-lg">Projects</a>
+            <a href="../../Reflections/" class="block px-3 py-2 text-slate-300 hover:bg-slate-800 rounded-lg">Reflections</a>
+            <a href="../../Resume/" class="block px-3 py-2 text-slate-300 hover:bg-slate-800 rounded-lg">Resume</a>
+            <a href="../../Contact/" class="block px-3 py-2 text-slate-300 hover:bg-slate-800 rounded-lg">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Project Detail Section -->
+<section class="page-section px-6 py-28 bg-slate-900/50">
+    <div class="max-w-4xl mx-auto">
+        <!-- Back Button -->
+        <a href="../" class="inline-flex items-center text-purple-400 hover:text-purple-300 mb-8 fade-in">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+            Back to Projects
+        </a>
+
+        <!-- Project Header -->
+        <div class="mb-12 fade-in">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-purple-400">Unit Pricing Database</h1>
+            <p class="text-xl text-slate-300 mb-6">A streamlined database solution for construction material pricing estimation</p>
+
+            <div class="flex flex-wrap gap-2 mb-6">
+                <span class="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                <span class="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-sm">TypeScript</span>
+                <span class="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-sm">SharePoint</span>
+                <span class="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-sm">Database Design</span>
+            </div>
+
+            <div class="text-slate-400 italic">Software Contract</div>
+        </div>
+
+        <!-- Main Image -->
+        <div class="mb-12 rounded-2xl overflow-hidden border border-slate-700 fade-in">
+            <img src="../../public/DPG.png" alt="Unit Pricing Database" class="w-full">
+        </div>
+
+        <!-- Project Content -->
+        <div class="prose prose-invert prose-purple max-w-none fade-in">
+            <h2 class="text-3xl font-bold text-white mb-4">Project Background</h2>
+            <p class="text-slate-300 mb-6 leading-relaxed">
+                This project was developed for a construction company that needed an efficient way to store and access
+                unit pricing information for materials used in their projects. Prior to this system, pricing data was
+                scattered across various spreadsheets and documents, making it difficult for estimators to quickly find
+                accurate pricing information when preparing bids. The goal was to create a centralized database with
+                an intuitive interface that would streamline the estimation process.
+            </p>
+
+            <h2 class="text-3xl font-bold text-white mb-4 mt-12">Solution Design</h2>
+            <p class="text-slate-300 mb-6 leading-relaxed">
+                I designed a comprehensive database structure to organize pricing data by category, supplier, and material
+                type, making it easy to query and retrieve relevant information. The database tracks historical pricing
+                data, allowing the team to identify trends and make more informed decisions about future estimates.
+                Special attention was paid to data validation to ensure pricing information remained accurate and consistent.
+            </p>
+
+            <p class="text-slate-300 mb-6 leading-relaxed">
+                The frontend was built on Microsoft SharePoint, leveraging its collaboration features and accessibility
+                within the company's existing infrastructure. I developed custom web parts using JavaScript and TypeScript
+                that provided a clean, user-friendly interface for searching materials, viewing pricing details, and
+                comparing costs across different suppliers. The interface includes filtering options, quick search
+                functionality, and the ability to export data for use in estimation documents.
+            </p>
+
+            <!-- Second Image (placeholder - you can add actual screenshot) -->
+            <div class="my-12 rounded-2xl overflow-hidden border border-slate-700">
+                <img src="https://via.placeholder.com/800x450/8b5cf6/ffffff?text=SharePoint+Interface" alt="SharePoint Interface" class="w-full">
+            </div>
+
+            <h2 class="text-3xl font-bold text-white mb-4 mt-12">Key Features</h2>
+            <ul class="text-slate-300 space-y-3 mb-6">
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-purple-400 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Centralized database for all unit pricing information</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-purple-400 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Advanced search and filtering capabilities</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-purple-400 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Historical pricing data tracking and analysis</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-purple-400 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Supplier comparison tools</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-purple-400 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Data export functionality for estimation documents</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-purple-400 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Role-based access control for data management</span>
+                </li>
+            </ul>
+
+            <h2 class="text-3xl font-bold text-white mb-4 mt-12">Technical Challenges and Growth</h2>
+            <p class="text-slate-300 mb-6 leading-relaxed">
+                This project required me to quickly adapt to the SharePoint development environment, which was new to me
+                at the time. I learned how to work within SharePoint's framework while building custom solutions that
+                met the specific needs of the construction company. The experience taught me the importance of understanding
+                client workflows and designing systems that integrate seamlessly into existing business processes.
+            </p>
+
+            <p class="text-slate-300 mb-6 leading-relaxed">
+                Working with TypeScript on this project strengthened my understanding of type safety and how it can prevent
+                errors in data-intensive applications. I also gained valuable experience in database design, particularly
+                in structuring data to support efficient queries while maintaining data integrity. The project reinforced
+                the importance of user feedback in iterative development, as several features were refined based on input
+                from the estimators who used the system daily.
+            </p>
+
+            <h2 class="text-3xl font-bold text-white mb-4 mt-12">Impact</h2>
+            <p class="text-slate-300 mb-6 leading-relaxed">
+                The system significantly reduced the time estimators spent searching for pricing information, allowing
+                them to prepare more accurate bids more quickly. The centralized nature of the database also improved
+                data consistency across the organization and made it easier to update pricing information when suppliers
+                changed their rates. The historical tracking feature proved particularly valuable for identifying seasonal
+                pricing patterns and negotiating better rates with suppliers.
+            </p>
+        </div>
+
+        <!-- Navigation Footer -->
+        <div class="mt-12 pt-8 border-t border-slate-700">
+            <a href="../" class="inline-flex items-center text-purple-400 hover:text-purple-300">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+                Back to Projects
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-slate-900 border-t border-slate-800 py-8 px-6">
+    <div class="max-w-7xl mx-auto text-center">
+        <p class="text-slate-400">&copy; 2025 Dillon Fayas.</p>
+    </div>
+</footer>
+
+<script src="../../../script.js"></script>
+</body>
+</html>
