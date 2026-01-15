@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App - Dillon Fayas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="../../public/DF_Favicon.png">
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="fixed w-full top-0 z-50 bg-slate-900/95 backdrop-blur-sm border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <div class="text-2xl font-bold">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">DF</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="../../../" class="nav-link text-slate-300 hover:text-blue-400">Home</a>
+                <a href="../" class="nav-link text-slate-300 hover:text-blue-400">Projects</a>
+                <a href="../../Resume/" class="nav-link text-slate-300 hover:text-blue-400">Resume</a>
+                <a href="../../Contact/" class="nav-link text-slate-300 hover:text-blue-400">Contact</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-slate-300">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-800">
+        <div class="px-4 pt-2 pb-3 space-y-1">
+            <a href="../../../" class="block px-3 py-2 text-slate-300 hover:bg-slate-800 rounded-lg">Home</a>
+            <a href="../" class="block px-3 py-2 text-slate-300 hover:bg-slate-800 rounded-lg">Projects</a>
+            <a href="../../Resume/" class="block px-3 py-2 text-slate-300 hover:bg-slate-800 rounded-lg">Resume</a>
+            <a href="../../Contact/" class="block px-3 py-2 text-slate-300 hover:bg-slate-800 rounded-lg">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Project Detail Section -->
+<section class="page-section px-6 py-28 bg-slate-900/50">
+    <div class="max-w-4xl mx-auto">
+        <!-- Back Button -->
+        <a href="../" class="inline-flex items-center text-blue-400 hover:text-blue-300 mb-8 fade-in">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+            Back to Projects
+        </a>
+
+        <!-- Project Header -->
+        <div class="mb-12 fade-in">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-blue-400">Quiz Application</h1>
+            <p class="text-xl text-slate-300 mb-6">Customizable trivia app built with Express and Open Trivia Database</p>
+
+            <div class="flex flex-wrap gap-2 mb-6">
+                <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm">Express</span>
+                <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm">Web Development</span>
+                <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm">API Integration</span>
+            </div>
+
+            <div class="text-slate-400 italic">Personal Project</div>
+        </div>
+
+        <!-- Main Image -->
+        <div class="mb-12 rounded-2xl overflow-hidden border border-slate-700 fade-in">
+            <img src="../../public/quiz_app_screenshot.jpg" alt="Quiz App Screenshot" class="project-image">
+        </div>
+
+        <!-- Project Content -->
+        <div class="prose prose-invert prose-purple max-w-none fade-in">
+            <h2 class="text-3xl font-bold text-white mb-4">Overview</h2>
+            <p class="text-slate-300 mb-6 leading-relaxed">
+                Built a full-featured quiz application allowing users to select categories, difficulty, and question types, take timed quizzes, view results, and create custom quizzes for others. The project integrates Express for API functionality and Open Trivia Database for default questions.
+            </p>
+
+            <h2 class="text-3xl font-bold text-white mb-4 mt-12">Functionality</h2>
+            <ul class="text-slate-300 list-disc list-inside space-y-3 mb-6">
+                <li><strong>Customizable Quizzes:</strong> Users can select categories, question counts, difficulty, and type of questions.</li>
+                <li><strong>Timed Quizzes:</strong> A timer tracks how long it takes to complete a quiz.</li>
+                <li><strong>Results Summary:</strong> Users see their score, time, and a full answer key upon completion.</li>
+                <li><strong>Quiz Builder:</strong> Users can create and publish custom quizzes for others to attempt.</li>
+            </ul>
+
+
+            <h2 class="text-3xl font-bold text-white mb-4 mt-12">Key Takeaways</h2>
+            <p class="text-slate-300 mb-6 leading-relaxed">
+                This project strengthened my skills in full-stack JavaScript development, API integration, and user experience design. It demonstrates the ability to create interactive web applications with dynamic content and user-generated features.
+            </p>
+
+            <!-- Screenshot / Additional Image -->
+            <div class="my-12 rounded-2xl overflow-hidden border border-slate-700">
+                <img src="../../public/quiz_app_builder.jpg" alt="Quiz Builder Screenshot" class="project-image">
+            </div>
+        </div>
+
+        <!-- Navigation Footer -->
+        <div class="mt-12 pt-8 border-t border-slate-700">
+            <a href="../" class="inline-flex items-center text-blue-400 hover:text-blue-300">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+                Back to Projects
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-slate-900 border-t border-slate-800 py-8 px-6">
+    <div class="max-w-7xl mx-auto text-center">
+        <p class="text-slate-400">&copy; 2025 Dillon Fayas.</p>
+    </div>
+</footer>
+
+<script src="../../../script.js"></script>
+</body>
+</html>
